@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ArrayRandomizer {
 
-    public static int [] fillArray(int length, int lowLimit, int highLimit) {
+    public static int [] fill(int length, int lowLimit, int highLimit) {
         int [] array = new int [length];
 
         Random rand = new Random();

@@ -43,7 +43,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int [] randomNumbers = ArrayRandomizer.fillArray(5, 0, 4);
+        int [] randomNumbers = ArrayRandomizer.fill(5, 0, 4);
         int [] predefinedNumbers = new int[] {5, 4, 3, 2, 1};
         sortNumbers(randomNumbers);
         System.out.println(Arrays.toString(randomNumbers));

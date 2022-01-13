@@ -26,11 +26,11 @@ public class LogFormatter extends Formatter {
 
     }
 
-    public static LogRecord createLogRecord (String message) {
+    public static LogRecord createLog(String message) {
         return new LogRecord(Level.INFO, message);
     }
 
-    public static LogRecord createLogRecord(Level level, String message) {
+    public static LogRecord createLog(Level level, String message) {
         return new LogRecord(level, message);
     }
 

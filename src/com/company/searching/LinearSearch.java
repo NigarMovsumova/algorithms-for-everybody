@@ -6,7 +6,7 @@ import com.company.util.LogFormatter;
 import java.util.logging.Formatter;
 import java.util.logging.Logger;
 
-import static com.company.util.LogFormatter.createLogRecord;
+import static com.company.util.LogFormatter.createLog;
 
 public class LinearSearch {
 
@@ -22,11 +22,11 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        int [] randomNumbers = ArrayRandomizer.fillArray(5, 0, 4);
+        int [] randomNumbers = ArrayRandomizer.fill(5, 0, 4);
         int [] predefinedNumbers = new int[] {1, 2, 3, 4, 5};
 
-        logger.log(createLogRecord(String.valueOf(findNumberIndex(randomNumbers, 5))));
-        logger.log(createLogRecord(String.valueOf(findNumberIndex(predefinedNumbers, 5))));
+        logger.log(createLog(String.valueOf(findNumberIndex(randomNumbers, 5))));
+        logger.log(createLog(String.valueOf(findNumberIndex(predefinedNumbers, 5))));
     }
 
 }

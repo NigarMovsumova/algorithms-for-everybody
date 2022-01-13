@@ -1,8 +1,8 @@
 package com.company.sorting;
 
-import com.company.util.ArrayRandomizer;
-
 import java.util.Arrays;
+
+import static com.company.util.ArrayRandomizer.fill;
 
 public class SelectionSort {
 
@@ -35,7 +35,7 @@ public class SelectionSort {
 
 
     public static void main(String[] args) {
-        int [] randomNumbers = ArrayRandomizer.fillArray(5, 0, 4);
+        int [] randomNumbers = fill(5, 0, 4);
         int [] predefinedNumbers = new int[] {5, 4, 3, 2, 1};
         System.out.println(Arrays.toString(sortNumbers(randomNumbers)));
         System.out.println(Arrays.toString(sortNumbers(predefinedNumbers)));
